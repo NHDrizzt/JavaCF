@@ -10,7 +10,6 @@ public class Listy {
         for(int i=0; i<n;i++){
             list.add(sc.nextInt());
         }
-        System.out.println("ab");
         int q = sc.nextInt();
         for(int i=0; i<q; i++){
             if(sc.next().equals("Insert")){
