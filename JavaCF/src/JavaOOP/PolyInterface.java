@@ -1,4 +1,4 @@
-package JavaC;
+package JavaOOP;
 
 import java.util.*;
 interface AdvancedArithmetic{
