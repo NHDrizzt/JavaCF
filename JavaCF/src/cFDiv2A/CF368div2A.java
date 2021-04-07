@@ -1,8 +1,8 @@
-package CFDiv2;
+package cFDiv2A;
 
 import java.util.Scanner;
 
-public class CF368div2 {
+public class CF368div2A {
  
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
