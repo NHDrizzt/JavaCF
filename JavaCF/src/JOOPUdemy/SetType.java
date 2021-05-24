@@ -27,7 +27,7 @@ public class SetType {
 			set.add(sc.nextInt());
 		}
 		System.out.print("Total Students: " + set.size());
-		
+		sc.close();
 	}
 
 }
