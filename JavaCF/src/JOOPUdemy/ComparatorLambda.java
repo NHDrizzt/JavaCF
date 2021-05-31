@@ -14,12 +14,7 @@ public class ComparatorLambda {
 		list.add(new Product("Note", 1100.0));
 		list.add(new Product("Test", 5200.0));
 		
-		list.sort((p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase()));
-		
-		for(Product x : list) {
-			System.out.println(x);
-		}
-		
-		
+		list.forEach(p -> p.setValue(p.getValue() * 1.1));
+		list.forEach(t -> System.out.println(t));
 	}
 }
