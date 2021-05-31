@@ -1,7 +1,9 @@
 package JOOPUdemy;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import JOOPUdemy.model.entities.Product;
 
@@ -14,7 +16,7 @@ public class ComparatorLambda {
 		list.add(new Product("Note", 1100.0));
 		list.add(new Product("Test", 5200.0));
 		
-		list.forEach(p -> p.setValue(p.getValue() * 1.1));
-		list.forEach(t -> System.out.println(t));
+		List<String> lstring = list.stream().map(p -> p.getName().toUpperCase()).collect(Collectors.toList());
+		lstring.forEach(t -> System.out.println(t));
 	}
 }
